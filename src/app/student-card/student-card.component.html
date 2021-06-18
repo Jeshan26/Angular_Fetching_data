@@ -1,0 +1,31 @@
+    <div class="student-card mb-3">
+        <div class="row g-0 ">
+          <div class="avatar col-md-3">
+            <img src={{student.pic}} alt="avatar">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h1 class="card-title">{{student.firstName +" "+ student.lastName | uppercase}}</h1>
+              <div class="details ">
+                <p class="card-text"><small>Email: {{student.email}}</small></p>
+                <p class="card-text"><small>Company:{{student.company}}</small></p>
+                <p class="card-text"><small>Skill: {{student.skill}}</small></p>
+                <p class="card-text"><small>Average : {{student.grades | average }}</small></p>
+              </div>
+              <div *ngIf="counter" class="mt-3" >
+             <div class="mt-4 "
+               *ngFor="let grades of student.grades; index as i"
+               >
+               <p>Test {{i+1}} : {{grades}}%</p>  
+             </div> 
+                             
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 mt-4">
+            <button  *ngIf="!counter" (click)="showTest()"><img src="../../assets/images/add.png" ></button>
+            <button   *ngIf="counter" (click)="hideTest()"><img src="../../assets/images/minus.png" ></button>
+          </div>
+        </div>
+      </div>
+    

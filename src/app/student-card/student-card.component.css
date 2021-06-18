@@ -1,0 +1,28 @@
+.avatar>img{
+    border: 1px solid gray;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 0.5;
+}
+
+.student-card{
+    background-color: white;
+}
+
+button{
+    border-style: hidden;
+    background-color: white;
+}
+
+button > img{
+    height: 30px;
+    width: 30px;
+    border-style: hidden;
+    background-color: white;
+}
