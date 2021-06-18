@@ -1,0 +1,27 @@
+.student{
+    background-color: white;
+margin: auto;
+margin-top: 100px;
+width: 60%;
+border: 1px solid gray ;
+border-radius: 15px;
+padding: 10px;
+height: 700px;
+overflow: hidden;
+overflow-y: scroll;
+border-top: hidden;
+}
+
+.searchBox{
+    border-style: Hidden Hidden solid Hidden;
+    height: 100px;
+}
+p{
+    font-weight: bold;
+}
+
+.searchBox{
+height: auto;
+width: auto;
+
+}
